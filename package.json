@@ -1,0 +1,24 @@
+{
+  "name": "eternalcoders_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "new.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bssathwik/eternalcoders_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bssathwik/eternalcoders_backend/issues"
+  },
+  "homepage": "https://github.com/bssathwik/eternalcoders_backend#readme",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
