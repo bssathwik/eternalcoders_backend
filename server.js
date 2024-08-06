@@ -238,16 +238,22 @@ table th {
         res.statusCode = 200
         
         res.setHeader("Content-Type", "application/json");
-        const personal = { Name: "balabhadra sai sathwik", Branch: "cse" , regno: "23B91A0522" , dob:"26.03.2006" ,gender:"male" }
-        const contact = { email: "balabhadrasaisathwik@gmail.com", phonenumber: 7780262039 , regno: "23B91A0522" , dob:"26.03.2006" ,gender:"male" }
-        const address = { dno: "5-2-28", landmark: "gollagudem" , town: "amalapuram" , state:"andhra pradesh" ,pincode:533201 }
-        const education = { qualification1: {name:"Bachelor of Science in Computer Science",institution:"SRKREC",year:"pursuing"}, qualification2: {name:"internediate in mpc",institution:"aditya inter college",year:"june 2023"} ,qualification3: {name:"secoudary education",institution:"aditya school",year:"june 2021"}}
-        const skills = { skills: ["HTML", "CSS", "python", "java", "javascript","react","node.js","Git","SQL"]}
-        res.end(JSON.stringify(personal))
-        res.end(JSON.stringify(contact))
-        res.end(JSON.stringify(address))
-        res.end(JSON.stringify(education))
-        res.end(JSON.stringify(skills))
+        const data ={personal:{ Name: "balabhadra sai sathwik", Branch: "cse" , regno: "23B91A0522" , dob:"26.03.2006" ,gender:"male" },
+                    contact:{ email: "balabhadrasaisathwik@gmail.com", phonenumber: 7780262039  },
+                    address:{ dno: "5-2-28", landmark: "gollagudem" , town: "amalapuram" , state:"andhra pradesh" ,pincode:533201 },
+                    education:{ qualification1: {name:"Bachelor of Science in Computer Science",institution:"SRKREC",year:"pursuing"}, qualification2: {name:"internediate in mpc",institution:"aditya inter college",year:"june 2023"} ,qualification3: {name:"secoudary education",institution:"aditya school",year:"june 2021"}},
+                    skills:{ skills: ["HTML", "CSS", "python", "java", "javascript","react","node.js","Git","SQL"]}   }
+        // const personal = { Name: "balabhadra sai sathwik", Branch: "cse" , regno: "23B91A0522" , dob:"26.03.2006" ,gender:"male" }
+        // const contact = { email: "balabhadrasaisathwik@gmail.com", phonenumber: 7780262039  }
+        // const address = { dno: "5-2-28", landmark: "gollagudem" , town: "amalapuram" , state:"andhra pradesh" ,pincode:533201 }
+        // const education = { qualification1: {name:"Bachelor of Science in Computer Science",institution:"SRKREC",year:"pursuing"}, qualification2: {name:"internediate in mpc",institution:"aditya inter college",year:"june 2023"} ,qualification3: {name:"secoudary education",institution:"aditya school",year:"june 2021"}}
+        // const skills = { skills: ["HTML", "CSS", "python", "java", "javascript","react","node.js","Git","SQL"]}
+        // res.end(JSON.stringify(personal))
+        // res.end(JSON.stringify(contact))
+        // res.end(JSON.stringify(address))
+        // res.end(JSON.stringify(education))
+        // res.end(JSON.stringify(skills))
+        res.end(JSON.stringify(data))
     }
 
     else {
